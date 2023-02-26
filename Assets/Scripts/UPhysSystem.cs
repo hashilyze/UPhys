@@ -12,30 +12,43 @@ namespace UPhys
             // If have not instance, generate to ensure exsitence of instance
             if (s_instance == null)
             {
-                GameObject instanceObject = new GameObject(InstanceName);
-                s_instance = instanceObject.AddComponent<UPhysSystem>();
-
-                instanceObject.hideFlags = HideFlags.NotEditable;
-                s_instance.hideFlags = HideFlags.NotEditable;
-
-                DontDestroyOnLoad(instanceObject);
+                GameObject instanceObject = new GameObject(kInstanceName);
+                InitializeSingleton(instanceObject.AddComponent<UPhysSystem>());
             }
 
             return s_instance;
         }
 
-        private const string InstanceName = "UPhysSystem";
+        private const string kInstanceName = "UPhysSystem";
         private static UPhysSystem s_instance;
+
+
+        private static void InitializeSingleton (UPhysSystem instance)
+        {
+            s_instance = instance;
+            GameObject instanceObject = s_instance.gameObject;
+
+            instanceObject.hideFlags = HideFlags.NotEditable;
+            s_instance.hideFlags = HideFlags.NotEditable;
+
+            if(instance.m_settings == null)
+            {
+                // Use default settings
+                instance.m_settings = ScriptableObject.CreateInstance<UPhysSettings>();
+            }
+
+            DontDestroyOnLoad(instanceObject);
+        }
         #endregion
 
         // Collect CCT needed simulate
-        public static void RegisterCharacterController (UCharacterController character)
+        public static void RegisterCharacterMovement (UCharacterMovement movement)
         {
-            if (!m_characters.Contains(character)) m_characters.Add(character);
+            if (!m_movements.Contains(movement)) m_movements.Add(movement);
         }
-        public static void UnregisterCharacterController (UCharacterController character)
+        public static void UnregisterCharacterMovement (UCharacterMovement movement)
         {
-            m_characters.Remove(character);
+            m_movements.Remove(movement);
         }
         // Collect ACT needed simulate
         public static void RegisterPlatformController (UPlatformController platform)
@@ -46,20 +59,17 @@ namespace UPhys
         {
             m_platforms.Remove(platform);
         }
+        public static UPhysSettings Settings => s_instance.m_settings;
 
-        private static readonly List<UCharacterController> m_characters = new List<UCharacterController>();
+        private static readonly List<UCharacterMovement> m_movements = new List<UCharacterMovement>();
         private static readonly List<UPlatformController> m_platforms = new List<UPlatformController>();
-
+        [SerializeField] private UPhysSettings m_settings;
 
         private void Awake ()
         {
             if (s_instance == null)
             {
-                s_instance = this;
-                s_instance.gameObject.hideFlags = HideFlags.NotEditable;
-                s_instance.hideFlags = HideFlags.NotEditable;
-
-                DontDestroyOnLoad(s_instance.gameObject);
+                InitializeSingleton(this);
             }
             else
             {
@@ -69,37 +79,34 @@ namespace UPhys
                 }
             }
         }
-        /// <summary>
-        /// Entities based on UPhys simulated by UPhysSystem not itself
-        /// </summary>
+
         private void FixedUpdate ()
-        {
+        {   
+            // Update Entities based on UPhys
             // Simulate
             {
-                for (int cur = 0, cnt = m_platforms.Count; cur < cnt; ++cur)
+                for (int cur = 0, count = m_platforms.Count; cur < count; ++cur)
                 {
                     UPlatformController platform = m_platforms[cur];
                     platform.Simulate(Time.fixedDeltaTime);
                 }
-
-                for (int cur = 0, cnt = m_characters.Count; cur < cnt; ++cur)
+                for (int cur = 0, count = m_movements.Count; cur < count; ++cur)
                 {
-                    UCharacterController character = m_characters[cur];
-                    character.Simulate(Time.fixedDeltaTime);
+                    UCharacterMovement movement = m_movements[cur];
+                    movement.Simulate(Time.fixedDeltaTime);
                 }
             }
-
             // Simulate Commit
             {
-                for (int cur = 0, cnt = m_characters.Count; cur < cnt; ++cur)
-                {
-                    UCharacterController character = m_characters[cur];
-                    character.SimulateCommit();
-                }
-                for (int cur = 0, cnt = m_platforms.Count; cur < cnt; ++cur)
+                for (int cur = 0, count = m_platforms.Count; cur < count; ++cur)
                 {
                     UPlatformController platform = m_platforms[cur];
                     platform.SimulateCommit();
+                }
+                for (int cur = 0, count = m_movements.Count; cur < count; ++cur)
+                {
+                    UCharacterMovement movement = m_movements[cur];
+                    movement.SimulateCommit();
                 }
             }
         }

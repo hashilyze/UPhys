@@ -28,8 +28,8 @@ namespace UPhys
 
         public virtual void UpdateVelocity (float deltaTime)
         {
-            m_rigidbody.velocity = m_velocity;
-            m_rigidbody.angularVelocity = Quaternion.AngleAxis(m_rotateSpeed, m_rotateAxis).eulerAngles;
+            //m_rigidbody.velocity = m_velocity;
+            //m_rigidbody.angularVelocity = Quaternion.AngleAxis(m_rotateSpeed, m_rotateAxis).eulerAngles * Mathf.Deg2Rad;
         }
 
         public void Simulate (float deltaTime)

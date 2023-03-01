@@ -1,43 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Utility;
 
 namespace UPhys
 {
-    public class UPhysSystem : MonoBehaviour
+    public class UPhysSystem : SingletonComponent<UPhysSystem>
     {
         #region Singleton 
-        public static UPhysSystem GetInstance ()
-        {
-            // If have not instance, generate to ensure exsitence of instance
-            if (s_instance == null)
-            {
-                GameObject instanceObject = new GameObject(kInstanceName);
-                InitializeSingleton(instanceObject.AddComponent<UPhysSystem>());
-            }
-
-            return s_instance;
-        }
-
         private const string kInstanceName = "UPhysSystem";
-        private static UPhysSystem s_instance;
 
-
-        private static void InitializeSingleton (UPhysSystem instance)
+        protected override void InitializeInstance ()
         {
-            s_instance = instance;
-            GameObject instanceObject = s_instance.gameObject;
+            GameObject instanceObject = this.gameObject;
+            instanceObject.name = kInstanceName;
 
             instanceObject.hideFlags = HideFlags.NotEditable;
-            s_instance.hideFlags = HideFlags.NotEditable;
-
-            if(instance.m_settings == null)
-            {
-                // Use default settings
-                instance.m_settings = ScriptableObject.CreateInstance<UPhysSettings>();
-            }
-
-            DontDestroyOnLoad(instanceObject);
+            this.hideFlags = HideFlags.NotEditable;
         }
         #endregion
 
@@ -59,29 +38,18 @@ namespace UPhys
         {
             m_platforms.Remove(platform);
         }
-        public static UPhysSettings Settings => s_instance.m_settings;
 
         private static readonly List<UCharacterMovement> m_movements = new List<UCharacterMovement>();
         private static readonly List<UPlatformController> m_platforms = new List<UPlatformController>();
-        [SerializeField] private UPhysSettings m_settings;
-
-        private void Awake ()
-        {
-            if (s_instance == null)
-            {
-                InitializeSingleton(this);
-            }
-            else
-            {
-                if (s_instance != this)
-                {
-                    Destroy(this.gameObject);
-                }
-            }
-        }
 
         private void FixedUpdate ()
-        {   
+        {
+            float deltaTime = Time.fixedDeltaTime;
+            if(deltaTime < 0.0f)
+            {
+                return;
+            }
+
             // Update Entities based on UPhys
             // Simulate
             {

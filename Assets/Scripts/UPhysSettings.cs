@@ -1,11 +1,11 @@
 using UnityEngine;
+using Utility;
 
 namespace UPhys
 {
     [CreateAssetMenu(fileName = "UPhys Settings", menuName = "UPhys/UPhysSettings")]
-    public class UPhysSettings : ScriptableObject
+    public class UPhysSettings : SingletonScriptableObject<UPhysSettings>
     {
-        #region Public
         // Solve Overlap
         public int DepentrationIteration => _depentrationIteration;
         public bool KillPositionWhenExceedDepentrationIteration => _killPositionWhenExceedDepentrationIteration;
@@ -14,10 +14,8 @@ namespace UPhys
         public bool KillPositionWhenExceedVelocityIteration => _killPositionWhenExceedVelocityIteration;
         public bool KillRemainedDistanceWhenExceedVelocityIteration => _killRemainedDistanceWhenExceedVelocityIteration;
         // Misc
-        public float ContactOffset => _contactOffset;
-        #endregion
+        public float SkinWidth => _skinWidth;
 
-        #region Private
         [Header("Solve Overlap")]
         [Tooltip("Accuracy of depentration solver; Higher costs more")]
         [SerializeField] private int _depentrationIteration = 1;
@@ -32,7 +30,6 @@ namespace UPhys
         [SerializeField] private bool _killRemainedDistanceWhenExceedVelocityIteration = true;
         [Header("Misc")]
         [Tooltip("Gap between character and others")]
-        [SerializeField] private float _contactOffset = 0.02f;
-        #endregion
+        [SerializeField] private float _skinWidth = 0.02f;
     }
 }

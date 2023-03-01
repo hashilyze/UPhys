@@ -168,11 +168,11 @@ namespace UPhys
 
         private void OnEnable ()
         {
-            UInputManager.RegisterPlayer(this);
+            InputManager.RegisterPlayer(this);
         }
         private void OnDisable ()
         {
-            UInputManager.UnregisterPlayer(this);
+            InputManager.UnregisterPlayer(this);
         }
 
         private void UpdateVelocityDefault (float deltaTime, ref Vector3 velocity, UCharacterMovement movement)

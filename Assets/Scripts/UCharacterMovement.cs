@@ -7,58 +7,28 @@ namespace UPhys
     [System.Serializable]
     public struct GroundHitReport
     {
-        public bool HitAnyGround
-        {
-            get => m_hitAnyGround;
-            set => m_hitAnyGround = value;
-        }
-        public bool IsStable
-        {
-            get => m_isStable;
-            set => m_isStable = value;
-        }
-        public Collider Collider
-        {
-            get => m_collider;
-            set => m_collider = value;
-        }
-        public Vector3 Point
-        {
-            get => m_point;
-            set => m_point = value;
-        }
-        public Vector3 Normal
-        {
-            get => m_normal;
-            set => m_normal = value;
-        }
-        public float Angle
-        {
-            get => m_angle;
-            set => m_angle = value;
-        }
-        public float Distance
-        {
-            get => m_distance;
-            set => m_distance = value;
-        }
-        public float ElapsedUngroundTime
-        {
-            get => m_elapsedUngroundTime;
-            set => m_elapsedUngroundTime = value;
-        }
+        public bool HitAnyGround { get => m_hitAnyGround; set => m_hitAnyGround = value; }
+        public bool IsStable { get => m_isStable; set => m_isStable = value; }
+
+        public Collider Collider { get => m_collider; set => m_collider = value; }
+        public Vector3 Point { get => m_point; set => m_point = value; }
+        public Vector3 Normal { get => m_normal; set => m_normal = value; }
+        public float Angle { get => m_angle; set => m_angle = value; }
+        public float Distance { get => m_distance; set => m_distance = value; }
+
+        public float ElapsedUngroundTime { get => m_elapsedUngroundTime; set => m_elapsedUngroundTime = value; }
 
 
         [Tooltip("Whether detect ground regardless with stablity")]
-        private bool m_hitAnyGround;
+        [SerializeField] private bool m_hitAnyGround;
         [Tooltip("Whether detected ground is stabe, character doesn't slide on")]
-        private bool m_isStable;
-        private Collider m_collider;
-        private Vector3 m_point;
-        private Vector3 m_normal;
-        private float m_angle;
-        private float m_distance;
-        private float m_elapsedUngroundTime;
+        [SerializeField] private bool m_isStable;
+        [SerializeField] private Collider m_collider;
+        [SerializeField] private Vector3 m_point;
+        [SerializeField] private Vector3 m_normal;
+        [SerializeField] private float m_angle;
+        [SerializeField] private float m_distance;
+        [SerializeField] private float m_elapsedUngroundTime;
     }
 
     public class UCharacterMovement : MonoBehaviour
@@ -68,65 +38,37 @@ namespace UPhys
         public float Mass => m_mass;
         public Vector3 CharacterUp => m_nextCharacterUp;
 
-        public bool UseGroundSnap
-        {
-            get => m_useGroundSnap;
-            set => m_useGroundSnap = value;
-        }
-        public float StableAngle
-        {
-            get => m_stableAngle;
-            set => m_stableAngle = Mathf.Clamp(value, 0.0f, 90.0f);
-        }
-        public float StepOffset
-        {
-            get => m_stepOffset;
-            set => m_stepOffset = value;
-        }
+        public bool UseGroundSnap { get => m_useGroundSnap; set => m_useGroundSnap = value; }
+        public float StableAngle { get => m_stableAngle; set => m_stableAngle = Mathf.Clamp(value, 0.0f, 90.0f); }
+        public float StepOffset { get => m_stepOffset; set => m_stepOffset = value; }
         public GroundHitReport GroundReport => m_groundReport;
 
-        public LayerMask CollidableMask
-        {
-            get => m_collidableMask;
-            set => m_collidableMask = value;
-        }
-        public LayerMask BlockMask
-        {
-            get => m_blockMask;
-            set => m_blockMask = value;
-        }
+        public LayerMask CollidableMask { get => m_collidableMask; set => m_collidableMask = value; }
+        public LayerMask BlockMask { get => m_blockMask; set => m_blockMask = value; }
 
-        /// <summary>
-        /// Move character independently with velocity
-        /// </summary>
-        public void Move(Vector3 distance) 
+        /// <summaryMove character independently with velocity</summary>
+        public void Move (Vector3 distance)
         {
             m_additionalMoveDistance += distance;
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        public void Bounce(Vector3 distance, float time) 
-        { 
-        
-        }
+        public void Bounce (Vector3 distance, float time) { }
 
-        /// <summary>
-        /// Place character to destination and fix position during this frame
-        /// </summary>
-        public void Teleport(Vector3 destination)
+        /// <summary>Place character to destination and fix position during this frame</summary>
+        public void Teleport (Vector3 destination)
         {
             m_requestedTeleport = true;
             m_teleportDestination = destination;
         }
+        /// <summary>Place character to ground with closest to destination</summary>
+        public void TeleportUponGround(Vector3 destination, float snapDistance = int.MaxValue)
+        {
 
-        public void Look(Vector3 direction) {  }
-        public void Stand(Vector3 normal) { }
+        }
 
-        /// <summary>
-        /// Character couldn't touch ground until time over
-        /// </summary>
+        public void Look (Vector3 direction) { }
+
+        /// <summary>Detach from ground and skip ground handling until time over</summary>
         public void ForceUnground (float time = 0.1f)
         {
             m_isForceUnground = true;
@@ -135,38 +77,29 @@ namespace UPhys
 
         public void Simulate (float deltaTime)
         {
-            if (deltaTime <= 0.0f) return;
-
             // Initialize transform
             {
-                m_nextPos = m_initPos = m_rigidbody.position;
-                m_nextRot = m_initRot = m_rigidbody.rotation;
+                m_nextPos = m_initPos = m_rb.position;
+                m_nextRot = m_initRot = m_rb.rotation;
                 m_nextCharacterUp = m_nextRot * Vector3.up;
             }
-
             // Teleport: Set Position
+            if (m_requestedTeleport)
             {
-                if (m_requestedTeleport)
-                {
-                    m_requestedTeleport = false;
-                    ConsumeTeleport();
-                    return;
-                }
+                m_requestedTeleport = false;
+                ConsumeTeleport();
+                return;
             }
-
             // Handle Riding
+            if (m_useRiding)
             {
-                if (m_useRiding)
-                {
-                    HandleRiding(deltaTime);
-                }
+                HandleRiding(deltaTime);
             }
-
             // Overlap Recovery
+            if (m_handleStuck)
             {
                 SolveOverlap();
             }
-
             // Update Velocity
             {
                 Vector3 distance;
@@ -177,40 +110,37 @@ namespace UPhys
                 distance += m_additionalMoveDistance;
                 m_additionalMoveDistance = Vector3.zero;
 
-                InternalSafeMove(distance);
+                InternalSafeMoveWithSlide(distance);
             }
-
             // Update Look
             {
                 m_characterController.UpdateRotation(deltaTime, ref m_nextRot, this);
                 m_nextCharacterUp = m_nextRot * Vector3.up;
             }
-
-            // Stand on Planet and Snapping
-            {
-            }
-
             // Probe Ground and Snap
+            if (m_useHandleGround)
             {
                 ProbeGround(deltaTime);
             }
-
             // Move Position and Rotation
             {
                 // Update transform in physics scene to inform transform
-                m_rigidbody.position = m_nextPos;
-                m_rigidbody.rotation = m_nextRot;
+                m_rb.position = m_nextPos;
+                m_rb.rotation = m_nextRot;
+
+                transform.position = m_nextPos;
+                transform.rotation = m_nextRot;
             }
         }
 
         public void SimulateCommit ()
         {
             // Rollback transform as before simulate
-            m_rigidbody.position = m_initPos;
-            m_rigidbody.rotation = m_initRot;
+            m_rb.position = m_initPos;
+            m_rb.rotation = m_initRot;
             // Use movement funtion instead directly set raw transform because simulate with dynamic rigidbody
-            m_rigidbody.MovePosition(m_nextPos);
-            m_rigidbody.MoveRotation(m_nextRot);
+            m_rb.MovePosition(m_nextPos);
+            m_rb.MoveRotation(m_nextRot);
         }
         #endregion
 
@@ -220,6 +150,8 @@ namespace UPhys
         [SerializeField] private float m_mass = 100.0f;
 
         [Header("Ground Setting")]
+        [Tooltip("Use ground interaction")]
+        [SerializeField] private bool m_useHandleGround = true;
         [Tooltip("Snap character to ledge when bounce on")]
         [SerializeField] private bool m_useGroundSnap = true;
         [Tooltip("Character could climb on slope")]
@@ -231,35 +163,28 @@ namespace UPhys
         private bool m_isForceUnground = false;
         // Skip probe ground until left time zero
         private float m_leftUngroundTime = 0.0f;
-        
-        [Header("Gravity")]
-        [Tooltip("Apply gravity as character is on airbone")]
-        [SerializeField] private bool m_useGravity = true;
-        [Tooltip("Sacle of gravity without any weights; Higher falls faster")]
-        [SerializeField] private float m_gravity = 10.0f;
-        [Tooltip("Smooth feel of fall")]
-        [SerializeField] private float m_fallGravityWeights = 1.2f;
 
         [Header("Riding")]
         [SerializeField] private bool m_useRiding = true;
-        [SerializeField] private bool m_isRideDynamic = false;
-        [ReadOnly] [SerializeField] private Rigidbody m_riding;
-        [ReadOnly] [SerializeField] private Vector3 m_ridingContactPoint;
+        [ReadOnly][SerializeField] private Rigidbody m_riding;
+        [ReadOnly][SerializeField] private Vector3 m_ridingContactPoint;
+        private bool m_inHandleRiding = false;
 
         [Header("Misc")]
+        [SerializeField] private bool m_handleStuck = true;
         [Tooltip("Character can not pass though collider being layer")]
         [SerializeField] private LayerMask m_collidableMask;
         [Tooltip("Character never pass though collider being layer")]
         [SerializeField] private LayerMask m_blockMask;
-        private bool m_inHandleRiding = false;
 
         // Memory buffer
         private readonly Collider[] m_colliderBuffer = new Collider[8];
         private readonly RaycastHit[] m_hitInfoBuffer = new RaycastHit[8];
         // External Components
-        private CapsuleCollider m_bodyCollider;
-        private Rigidbody m_rigidbody;
+        private CapsuleCollider m_body;
+        private Rigidbody m_rb;
         private UCharacterController m_characterController;
+        private CollisionHandler m_collisionHandler;
         // Transform cache
         private Vector3 m_initPos;
         private Quaternion m_initRot;
@@ -275,20 +200,35 @@ namespace UPhys
 
         private void Awake ()
         {
-            m_bodyCollider = GetComponent<CapsuleCollider>();
-            if (m_bodyCollider != null)
+            // Initialize _body
+            m_body = GetComponent<CapsuleCollider>();
+            if (m_body == null)
             {
-                m_bodyCollider.isTrigger = false;
+                throw new System.NullReferenceException("");
             }
-
-            m_rigidbody = GetComponent<Rigidbody>();
-            if (m_rigidbody != null)
+            m_body.isTrigger = false;
+            // Initialize _rb
+            m_rb = GetComponent<Rigidbody>();
+            if (m_rb == null)
             {
-                m_rigidbody.useGravity = false;
-                m_rigidbody.isKinematic = true;
-                m_rigidbody.constraints = RigidbodyConstraints.None;
+                throw new System.NullReferenceException("");
             }
+            m_rb.useGravity = false;
+            m_rb.isKinematic = true;
+            m_rb.constraints = RigidbodyConstraints.None;
+            // Initialize _cct
             m_characterController = GetComponent<UCharacterController>();
+            if (m_characterController == null)
+            {
+                throw new System.NullReferenceException("");
+            }
+            // Initialize _collisionHandler
+            m_collisionHandler = GetComponent<CollisionHandler>();
+            if (m_collisionHandler == null)
+            {
+                throw new System.NullReferenceException("");
+            }
+            m_collisionHandler.Setup(m_body);
         }
         private void OnEnable ()
         {
@@ -321,227 +261,58 @@ namespace UPhys
                 m_ridingContactPoint = m_groundReport.Point;
             }
 
-            if(m_riding != null)
+            if (m_riding != null)
             {
-                // Snap riding
-                if (m_isRideDynamic || m_riding.isKinematic)
-                {
-                    // Lacay
-                    //Vector3 snapDistance;
-                    //// Get delta distance from linear velocity
-                    ////groundDistance = platform.Velocity * deltaTime;
-                    //snapDistance = m_riding.velocity * deltaTime;
+                Vector3 snapDistance = m_riding.GetPointVelocity(m_ridingContactPoint) * deltaTime;
+                //Vector3 snapDistance = (m_riding.velocity + Vector3.Cross(m_riding.angularVelocity, m_ridingContactPoint - m_riding.position)) * deltaTime;
 
-                    //// Get delta distance from angular velocity
-                    ////if (platform.RotateAxis != Vector3.zero && !Mathf.Approximately(platform.RotateSpeed, 0.0f))
-                    //if (m_riding.angularVelocity != Vector3.zero)
-                    //{
-                    //    // Torque calculated at last movor location
-                    //    Vector3 lastStart = m_ridingContactPoint;
-                    //    Vector3 lastCenter = m_riding.position - snapDistance;
-                    //    //Quaternion deltaRotation = Quaternion.AngleAxis(platform.RotateSpeed * deltaTime, platform.RotateAxis);
-                    //    Quaternion deltaRotation = Quaternion.Euler((m_riding.angularVelocity * deltaTime));
-                    //    Vector3 lastDestination = deltaRotation * (lastStart - lastCenter) + lastCenter;
-                    //    snapDistance += lastDestination - lastStart;
-                    //}
-
-                    Vector3 snapDistance = m_riding.GetPointVelocity(m_ridingContactPoint) * deltaTime;
-                    //Vector3 snapDistance = (m_riding.velocity + Vector3.Cross(m_riding.angularVelocity, m_ridingContactPoint - m_riding.position)) * deltaTime;
-
-                    //m_nextPos += snapDistance;
-                    m_inHandleRiding = true;
-                    if (SweepCharacter(m_nextPos, m_nextRot, snapDistance.normalized, snapDistance.magnitude + UPhysSystem.Settings.ContactOffset, m_hitInfoBuffer, out RaycastHit hit, true) > 0)
-                    {
-                        m_nextPos += (hit.distance - UPhysSystem.Settings.ContactOffset) * snapDistance.normalized;
-                    }
-                    else
-                    {
-                        m_nextPos += snapDistance;
-                    }
-                    m_inHandleRiding = false;
-                }
+                m_inHandleRiding = true;
+                InternalSafeMoveWithCollide(snapDistance, out Vector3 _, out RaycastHit _);
+                m_inHandleRiding = false;
             }
         }
 
-        /// <summary>
-        /// Depentrate character from obstacles; Pushed character from colliders
-        /// </summary>
-        private void SolveOverlap ()
+        /// <summary>Depentrate character from obstacles; Pushed character from colliders</summary>
+        
+
+        private void ClearGroundReport ()
         {
-            UPhysSettings settings = UPhysSystem.Settings;
-            // * How can I determine unrecoverible to stop shaking
-            Vector3 tgtPos = m_nextPos;
+            m_groundReport.HitAnyGround = false;
 
-            int currentIteration = 0;
-            int maxIteration = settings.DepentrationIteration;
-            while (currentIteration < maxIteration)
-            {
-                // If there are overlaped collider with character, detach character from these
-                int overlapCount = OverlapCharacter(tgtPos, m_nextRot, m_colliderBuffer);
-
-                // If no more found overlaped collider
-                if (overlapCount == 0)
-                {
-                    break;
-                }
-                for (int cur = 0; cur < overlapCount; ++cur)
-                {
-                    Collider overlapCollider = m_colliderBuffer[cur];
-
-                    GetPosAndRotInSimulation(overlapCollider, out Vector3 overlapPos, out Quaternion overlapRot);
-
-                    // Depentrate if colliders are overlaped with deeper than zero
-                    if (Physics.ComputePenetration(m_bodyCollider, tgtPos, m_nextRot,
-                        overlapCollider, overlapPos, overlapRot, out Vector3 dir, out float dist))
-                    {
-                        //tgtPos += dir * (dist + m_contactOffset * 0.5f);
-                        if (SweepCharacter(tgtPos, m_nextRot, dir, dist + settings.ContactOffset, m_hitInfoBuffer, out RaycastHit hitInfo, true) > 0)
-                        {
-                            // Move until collide
-                            tgtPos += dir * (hitInfo.distance - settings.ContactOffset);
-
-                            // * What do something? I'm forgot
-                            // * Caution: Very very unstable process, need to more test
-                            // * Do I need to unpush when on unstable ground?
-                            // Reorient pushed distance without shrink unless squished
-                            if (Vector3.Angle(-dir, hitInfo.normal) > 5.0f)
-                            {
-                                Vector3 tangent = GetTangent(dir, hitInfo.normal);
-
-                                float leftDistOnDir = dist - (hitInfo.distance - settings.ContactOffset) + settings.ContactOffset * 0.5f;
-                                float tangentOnDir = Vector3.Dot(tangent, dir);
-                                if (tangentOnDir > 0.001f)
-                                {
-                                    float leftDistOnTangent = leftDistOnDir / tangentOnDir;
-
-                                    //tgtPos += tangent * leftDistOnTangent;
-                                    if (SweepCharacter(tgtPos, m_nextRot, tangent, leftDistOnTangent, m_hitInfoBuffer, out hitInfo, true) > 0)
-                                    {
-                                        tgtPos += tangent * (hitInfo.distance - settings.ContactOffset);
-                                    }
-                                    else
-                                    {
-                                        tgtPos += tangent * leftDistOnTangent;
-                                    }
-                                }
-                            }
-                        }
-                        else
-                        {
-                            tgtPos += dir * (dist + settings.ContactOffset * 0.5f);
-                        }
-                    }
-                }
-                ++currentIteration;
-            }
-
-            if (currentIteration >= maxIteration)
-            {
-                // Break overlap recovery because character probably located in unsafed zone
-                if (settings.KillPositionWhenExceedDepentrationIteration)
-                {
-                    tgtPos = m_nextPos;
-                }
-            }
-
-            m_nextPos = tgtPos;
+            m_groundReport.Collider = null;
+            m_groundReport.Point = Vector3.zero;
+            m_groundReport.Distance = 0.0f;
+            m_groundReport.Normal = Vector3.zero;
+            m_groundReport.Angle = 0.0f;
+            m_groundReport.IsStable = false;
+            m_groundReport.ElapsedUngroundTime = 0.0f;
         }
 
-        /// <summary>Move character continously</summary>
-        private void InternalSafeMove (Vector3 distance)
+        /// <summary>Update Timer for ForceUnground</summary>
+        /// <returns>True when have left time after updated</returns>
+        private bool UpdateForceUngroundTimer (float deltaTime)
         {
-            // Discard unvalidated value
-            if (float.IsNaN(distance.x) || float.IsNaN(distance.y) || float.IsNaN(distance.z)) return;
-            if (Mathf.Approximately(distance.sqrMagnitude, 0.0f)) return;
-
-            UPhysSettings settings = UPhysSystem.Settings;
-            Vector3 tgtPos = m_nextPos;
-            Vector3 remainingDistance = distance;
-
-            int currentIteration = 0;
-            int maxIteration = settings.VelocityIteration;
-            while (currentIteration < maxIteration && remainingDistance.sqrMagnitude > 0.0f)
-            {
-                Vector3 remainingDirection = remainingDistance.normalized;
-                float remainingMagnitude = remainingDistance.magnitude;
-
-                // Character react to obstacles when crush
-                if (SweepCharacter(tgtPos, m_nextRot, remainingDirection, remainingMagnitude + settings.ContactOffset, m_hitInfoBuffer, out RaycastHit closestHit, true) > 0)
-                {
-                    // Move character until blocked
-                    closestHit.distance -= settings.ContactOffset;
-                    tgtPos += closestHit.distance * remainingDirection;
-
-                    // Update remaining distance
-                    //remainingMagnitude = Mathf.Max(remainingMagnitude - closestHit.distance, 0.0f);
-                    remainingMagnitude -= closestHit.distance;
-                    if (remainingMagnitude < 0.0f)
-                    {
-                        // Stop iteration unless be remained distance
-                        remainingDistance = Vector3.zero;
-                        break;
-                    }
-
-                    // Slide the surface of blocked obstacles
-                    // Project remaining distance to surface
-                    Vector3 tangent = GetTangent(remainingDirection, closestHit.normal);
-                    remainingDistance = Vector3.Dot(tangent, remainingDirection) * remainingMagnitude * tangent;
-
-                    // * How can I be independent from EState?
-                    // Don't climbing unstable ground when on stable ground
-                    // Unstable ground is regarded as a wall
-                    if (m_groundReport.HitAnyGround && m_groundReport.IsStable)
-                    {
-                        if (Vector3.Angle(m_nextCharacterUp, closestHit.normal) > m_stableAngle)
-                        {
-                            // Discard forward and upward distance
-                            // Legacy: this process couldn't discard forward distance
-                            //float climbDistance = Vector3.Dot(remainingDistance, m_nextCharacterUp);
-                            //if (climbDistance > 0.0f)
-                            //{
-                            //    remainingDistance -= climbDistance * m_nextCharacterUp;
-                            //}
-                            Vector3 sideVector = Vector3.Cross(closestHit.normal, m_nextCharacterUp).normalized;
-                            remainingDistance = Vector3.Dot(sideVector, remainingDistance) * sideVector;
-                        }
-                    }
-                    ++currentIteration;
-                }
-                else
-                {
-                    // There are no obstacles blocking movement
-                    tgtPos += remainingDistance;
-                    remainingDistance = Vector3.zero;
-                    break;
-                }
-            }
-
-            // When Exceed velocity iteration
-            if (currentIteration >= maxIteration)
-            {
-                // Discard calculated next position
-                if (settings.KillPositionWhenExceedVelocityIteration)
-                {
-                    tgtPos = m_nextPos;
-                }
-
-                // Appand remained distance to destination
-                if (!settings.KillRemainedDistanceWhenExceedVelocityIteration)
-                {
-                    tgtPos += remainingDistance;
-                }
-            }
-            m_nextPos = tgtPos;
+            return m_isForceUnground && (m_isForceUnground = (m_leftUngroundTime -= deltaTime) > 0.0f);
         }
 
+        private float GetSnapGroundDistance (float horizontalMovementDistance, float verticalMovementDistance, float groundAngle)
+        {
+            float snapDistance = horizontalMovementDistance * Mathf.Tan(groundAngle * Mathf.Deg2Rad);
+            if(verticalMovementDistance > 0.0f)
+            {
+                snapDistance += verticalMovementDistance;
+            }
+
+            return snapDistance;
+        }
+
+        /// <summary>Check contacted ground</summary
         private void ProbeGround (float deltaTime)
         {
-            // Update Timer
-            if (m_isForceUnground && (m_isForceUnground = (m_leftUngroundTime -= deltaTime) > 0.0f))
+            if (UpdateForceUngroundTimer(deltaTime))
             {
-                // Clear ground report
-                m_groundReport.HitAnyGround = false;
-                m_groundReport.Collider = null;
+                // Don't handle while timer actived
+                ClearGroundReport();
                 return;
             }
 
@@ -551,38 +322,30 @@ namespace UPhys
             m_groundReport.HitAnyGround = false;
             m_groundReport.Collider = null;
 
-            float probeDistance = UPhysSystem.Settings.ContactOffset * 2.0f;
+            float probeDistance = UPhysSettings.Instance.SkinWidth * 2.0f;
 
-            //float horizontalDistance = Vector3.ProjectOnPlane(m_velocity, m_nextCharacterUp).magnitude * deltaTime;
-            //float verticalDistance = Vector3.Dot(m_velocity, m_nextCharacterUp) * deltaTime;
-            float horizontalDistance = Vector3.ProjectOnPlane(m_nextPos - m_initPos, m_nextCharacterUp).magnitude;
-            float verticalDistance = Vector3.Dot(m_nextPos - m_initPos, m_nextCharacterUp);
+            Vector3 movementDistance = m_nextPos - m_initPos;
+            float horizontalDistance = Vector3.ProjectOnPlane(movementDistance, m_nextCharacterUp).magnitude;
+            float verticalDistance = Vector3.Dot(movementDistance, m_nextCharacterUp);
 
-            float maxSnapDistance = 0.2f;   // Snapable ground probing range
+            // Snapable ground probing range
+            float maxSnapDistance = 0.0f;
             if (wasStable)
             {
-                maxSnapDistance = horizontalDistance * Mathf.Tan(m_stableAngle * Mathf.Deg2Rad);
-
-                if (verticalDistance > 0.0f)
-                {
-                    maxSnapDistance += verticalDistance;
-                }
+                maxSnapDistance = GetSnapGroundDistance(horizontalDistance, verticalDistance, m_stableAngle);
             }
+
             // Cast to downward from bottom of character
-            if (SweepCharacter(m_nextPos, m_nextRot, -m_nextCharacterUp, probeDistance + maxSnapDistance, m_hitInfoBuffer, out RaycastHit closestHit, true) > 0)
+            if (m_collisionHandler.Sweep(m_nextPos, -m_nextCharacterUp, probeDistance + maxSnapDistance, m_hitInfoBuffer, out RaycastHit closestHit, m_collidableMask & m_blockMask, IsValidCollider) > 0)
             {
                 float angle = Vector3.Angle(m_nextCharacterUp, closestHit.normal);
 
-                float minSnapDistance = 0.0f; // Accurated snapable range because of ground's angle
+                // Accurated snapable range because of ground's angleFor
+                float minSnapDistance = 0.0f; 
                 // Don't snap when on steep ramp
                 if (wasStable && angle <= m_stableAngle)
                 {
-                    minSnapDistance += horizontalDistance * Mathf.Tan(angle * Mathf.Deg2Rad);
-
-                    if (verticalDistance > 0.0f)
-                    {
-                        minSnapDistance += verticalDistance;
-                    }
+                    minSnapDistance = GetSnapGroundDistance(horizontalDistance, verticalDistance, angle);
                 }
                 // Grounded when on ground or snapable
                 if (closestHit.distance <= probeDistance + minSnapDistance)
@@ -606,8 +369,8 @@ namespace UPhys
                 // Ground snapping
                 if (m_useGroundSnap)
                 {
-                    m_nextPos -= (m_groundReport.Distance - UPhysSystem.Settings.ContactOffset) * m_nextCharacterUp;
-                    m_groundReport.Distance = UPhysSystem.Settings.ContactOffset;
+                    m_nextPos -= (m_groundReport.Distance - UPhysSettings.Instance.SkinWidth) * m_nextCharacterUp;
+                    m_groundReport.Distance = UPhysSettings.Instance.SkinWidth;
                 }
 
                 // On Landed (first tick when grounded)
@@ -628,50 +391,169 @@ namespace UPhys
             }
         }
 
+        private void SolveOverlap ()
+        {
+            // * How can I determine unrecoverible to stop shaking
+            Vector3 backupPosition = m_nextPos;
+
+            int currentIteration = 0;
+            int maxIteration = UPhysSettings.Instance.DepentrationIteration;
+            while (currentIteration < maxIteration)
+            {
+                // If there are overlaped collider with character, detach character from these
+                int overlapCount = m_collisionHandler.Overlap(m_nextPos, m_colliderBuffer, m_collidableMask, IsValidCollider);
+                // If no more found overlaped collider
+                if (overlapCount == 0)
+                {
+                    break;
+                }
+                for (int cur = 0; cur < overlapCount; ++cur)
+                {
+                    Collider overlapCollider = m_colliderBuffer[cur];
+                    
+                    UPhysUtility.GetPosAndRot(overlapCollider, out Vector3 overlapPos, out Quaternion overlapRot);
+
+                    // Depentrate if colliders are overlaped with deeper than zero
+                    if (Physics.ComputePenetration(m_body, m_nextPos, m_nextRot,
+                        overlapCollider, overlapPos, overlapRot, out Vector3 dir, out float dist))
+                    {
+                        if(InternalSafeMoveWithCollide(dist * dir, out Vector3 remainingDistance, out RaycastHit hitInfo))
+                        {
+                            if (remainingDistance.sqrMagnitude > 0.0f)
+                            {
+                                // * Caution: Very very unstable process, need to more test; recommnad using squish instead of this soultion
+                                // Slided push without projection of distance unless squished
+                                if (Vector3.Angle(-dir, hitInfo.normal) > 5.0f)
+                                {
+                                    Vector3 tangent = GetTangent(dir, hitInfo.normal);
+
+                                    float leftDistOnDir = dist - (hitInfo.distance - UPhysSettings.Instance.SkinWidth);
+                                    float tangentOnDir = Vector3.Dot(tangent, dir);
+                                    if (tangentOnDir > 0.001f)
+                                    {
+                                        float leftDistOnTangent = leftDistOnDir / tangentOnDir;
+
+                                        InternalSafeMoveWithCollide(leftDistOnTangent * tangent, out Vector3 _, out RaycastHit _);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                ++currentIteration;
+            }
+
+            if (currentIteration >= maxIteration)
+            {
+                // Break overlap recovery because character probably located in unsafed zone
+                if (UPhysSettings.Instance.KillPositionWhenExceedDepentrationIteration)
+                {
+                    m_nextPos = backupPosition;
+                }
+            }
+        }
+
+        /// <summary>Move character and stop when collide</summary>
+        private bool InternalSafeMoveWithCollide(Vector3 distance, out Vector3 remainingDistance, out RaycastHit hitInfo)
+        {
+            Vector3 direction = distance.normalized;
+            float magnitude = distance.magnitude;
+            // Character react to obstacles when crush
+            if (m_collisionHandler.Sweep(m_nextPos, direction, magnitude + UPhysSettings.Instance.SkinWidth, m_hitInfoBuffer, out RaycastHit closestHit, m_collidableMask & m_blockMask, IsValidCollider) > 0)
+            {
+                hitInfo = closestHit;
+                // Move character until blocked
+                closestHit.distance -= UPhysSettings.Instance.SkinWidth;
+                m_nextPos += closestHit.distance * direction;
+                // Update remaining distance
+                if ((magnitude -= closestHit.distance) < 0.0f)
+                {
+                    remainingDistance = Vector3.zero;
+                    return false;
+                }
+                else
+                {
+                    remainingDistance = magnitude * direction;
+                    return true;
+                }
+            }
+            else
+            {
+                // There are no obstacles blocking movement
+                m_nextPos += distance;
+                hitInfo = default;
+                remainingDistance = Vector3.zero;
+                return false;
+            }
+        }
+
+        /// <summary>Move character and slide obstacle when collide</summary>
+        private void InternalSafeMoveWithSlide (Vector3 distance)
+        {
+            // Discard unvalidated value
+            if (float.IsNaN(distance.x) || float.IsNaN(distance.y) || float.IsNaN(distance.z)) return;
+            if (Mathf.Approximately(distance.sqrMagnitude, 0.0f)) return;
+
+            Vector3 backupPosition = m_nextPos;
+            Vector3 remainingDistance = distance;
+
+            int currentIteration = 0;
+            int maxIteration = UPhysSettings.Instance.VelocityIteration;
+            while (currentIteration < maxIteration && remainingDistance.sqrMagnitude > 0.0f)
+            {
+                if (InternalSafeMoveWithCollide(remainingDistance, out Vector3 leftDistance, out RaycastHit hitInfo))
+                {
+                    // Project remaining distance to surface
+                    Vector3 tangent = GetTangent(leftDistance, hitInfo.normal);
+                    remainingDistance = Vector3.Dot(tangent, leftDistance.normalized) * leftDistance.magnitude * tangent;
+
+                    // Don't climbing unstable ground when on stable ground
+                    // Unstable ground is regarded as a wall
+                    if (m_groundReport.HitAnyGround && m_groundReport.IsStable)
+                    {
+                        if (Vector3.Angle(m_nextCharacterUp, hitInfo.normal) > m_stableAngle)
+                        {
+                            // Discard forward and upward distance
+                            Vector3 sideVector = Vector3.Cross(hitInfo.normal, m_nextCharacterUp).normalized;
+                            remainingDistance = Vector3.Dot(sideVector, remainingDistance) * sideVector;
+                        }
+                    }
+                    ++currentIteration;
+                }
+                else
+                {
+                    remainingDistance = Vector3.zero;
+                    break;
+                }
+            }
+
+            // Exceed velocity solve iteration
+            if (currentIteration >= maxIteration)
+            {
+                // Discard calculated movement 
+                if (UPhysSettings.Instance.KillPositionWhenExceedVelocityIteration)
+                {
+                    m_nextPos = backupPosition;
+                }
+                // Appand remained distance to movement
+                if (!UPhysSettings.Instance.KillRemainedDistanceWhenExceedVelocityIteration)
+                {
+                    m_nextPos += remainingDistance;
+                }
+            }
+        }
+
+        /// <summary>Surface tanget for direction</summary>
         private Vector3 GetTangent (Vector3 direction, Vector3 surfaceNormal)
         {
             Vector3 rightVector = Vector3.Cross(direction, surfaceNormal);
             return Vector3.Cross(surfaceNormal, rightVector).normalized;
         }
 
-        /// <summary>
-        // Get overlaped collider's transform in current physics scene
-        /// </summary>
-        private void GetPosAndRotInSimulation (Collider collider, out Vector3 pos, out Quaternion rot)
-        {   
-            // * How can I get transform of collider's more simply?
-
-            // Get changed transform if UPhys Object
-            Rigidbody overlapRigidbody = collider.attachedRigidbody;
-            if (overlapRigidbody != null)
-            {
-                if(overlapRigidbody.isKinematic)
-                {
-                    pos = overlapRigidbody.position;
-                    if (overlapRigidbody.gameObject != collider.gameObject)
-                    {
-                        pos += overlapRigidbody.rotation * collider.transform.localPosition;
-                    }
-                    rot = overlapRigidbody.rotation;
-                }
-                else
-                {
-                    pos = overlapRigidbody.position;
-                    rot = overlapRigidbody.rotation;
-                }
-            }
-            else
-            {
-                Transform overlapTransform = collider.transform;
-                pos = overlapTransform.position;
-                rot = overlapTransform.rotation;
-            }
-        }
-
         private bool IsValidCollider (Collider col)
         {
             // Ignore itself
-            if (col == m_bodyCollider) return false;
+            if (col == m_body) return false;
 
             Rigidbody rb = col.attachedRigidbody;
             if (rb != null)
@@ -679,7 +561,7 @@ namespace UPhys
                 // Ignore dynamic rigidbody
                 if (!rb.isKinematic) return false;
                 // Ignore my object
-                if (rb == m_bodyCollider.attachedRigidbody) return false;
+                if (rb == m_body.attachedRigidbody) return false;
                 // Ignore movoing block in override update
                 if (m_inHandleRiding && rb == m_riding) return false;
             }
@@ -687,91 +569,10 @@ namespace UPhys
             return true;
         }
 
-        /// <summary>
-        /// Find obstacle overlaped with character when located at
-        /// </summary>
-        private int OverlapCharacter (Vector3 position, Quaternion rotation, Collider[] results, bool onlyBlock = false)
+        private bool IsValidCollider(RaycastHit hit)
         {
-            int layerMask = m_collidableMask;
-            if (onlyBlock)
-            {
-                m_collidableMask &= m_blockMask;
-            }
-
-            Vector3 center = position + rotation * m_bodyCollider.center;
-            Vector3 anchor = rotation * ((0.5f * m_bodyCollider.height - m_bodyCollider.radius) * Vector3.up);
-            int count = Physics.OverlapCapsuleNonAlloc(center + anchor, center - anchor,
-                m_bodyCollider.radius, results, layerMask, QueryTriggerInteraction.Ignore);
-
-            // Filter collider
-            int ret = 0;
-            for (int cur = 0; cur < count; ++cur)
-            {
-                if (IsValidCollider(results[cur]))
-                {
-                    results[ret++] = results[cur];
-                }
-            }
-            return ret;
+            return IsValidCollider(hit.collider);
         }
-
-        /// <summary>
-        /// Cast character body and get the closest hit when located at
-        /// </summary>
-        private int SweepCharacter (Vector3 position, Quaternion rotation, Vector3 direction, float distance, RaycastHit[] results, out RaycastHit closestHit, bool onlyBlock = false)
-        {
-            int layerMask = m_collidableMask;
-            if (onlyBlock)
-            {
-                layerMask &= m_blockMask;
-            }
-
-            int ret = 0;
-            closestHit = results[0];
-            float closestDist = float.PositiveInfinity;
-
-            Vector3 center = position + rotation * m_bodyCollider.center;
-            Vector3 anchor = rotation * ((0.5f * m_bodyCollider.height - m_bodyCollider.radius) * Vector3.up);
-            int count = Physics.CapsuleCastNonAlloc(center + anchor, center - anchor,
-                m_bodyCollider.radius, direction, results, distance, layerMask, QueryTriggerInteraction.Ignore);
-
-            for (int cur = 0; cur < count; ++cur)
-            {
-                ref RaycastHit hit = ref m_hitInfoBuffer[cur];
-
-                if (!IsValidCollider(hit.collider))
-                {
-                    continue;
-                }
-                // Recalculate overlaped collider's hitInfo because it has reversed normal
-                if (hit.distance <= 0.0f)
-                {
-                    GetPosAndRotInSimulation(hit.collider, out Vector3 hitPos, out Quaternion hitRot);
-
-                    if (Physics.ComputePenetration(
-                        m_bodyCollider, position, rotation,
-                        hit.collider, hitPos, hitRot,
-                        out Vector3 dir, out float _))
-                    {
-                        hit.normal = dir;
-                    }
-                }
-                // Ignore reversed normal 
-                if (Vector3.Dot(direction, hit.normal) >= 0.0f)
-                {
-                    continue;
-                }
-
-                // Update to closer hitInfo
-                if (hit.distance < closestDist)
-                {
-                    closestHit = hit;
-                    closestDist = hit.distance;
-                }
-                results[ret++] = hit;
-            }
-            return ret;
-        }
-        #endregion
+#endregion
     }
 }

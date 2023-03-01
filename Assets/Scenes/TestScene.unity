@@ -287,16 +287,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -467,16 +474,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -647,16 +661,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -827,16 +848,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -1007,16 +1035,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -1187,16 +1222,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -1464,22 +1506,126 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
   m_blockMask:
     serializedVersion: 2
     m_Bits: 64
+--- !u!1 &74726173
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 74726174}
+  - component: {fileID: 74726177}
+  - component: {fileID: 74726176}
+  - component: {fileID: 74726175}
+  m_Layer: 6
+  m_Name: Cube (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &74726174
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74726173}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -2.5}
+  m_LocalScale: {x: 1, y: 1, z: 5}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1882850098}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &74726175
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74726173}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &74726176
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74726173}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &74726177
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74726173}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &76187862
 GameObject:
   m_ObjectHideFlags: 0
@@ -1514,7 +1660,7 @@ Transform:
   - {fileID: 711504076}
   - {fileID: 685870751}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &82404491
 GameObject:
@@ -1758,16 +1904,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -1938,16 +2091,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -2118,16 +2278,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -2298,16 +2465,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -2575,16 +2749,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -2755,16 +2936,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -2935,16 +3123,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -3115,16 +3310,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -3295,16 +3497,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -3475,16 +3684,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -3655,16 +3871,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -3835,16 +4058,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -4015,16 +4245,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -4195,16 +4432,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -4375,16 +4619,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -4749,22 +5000,159 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
   m_blockMask:
     serializedVersion: 2
     m_Bits: 64
+--- !u!1 &269454610
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 269454611}
+  - component: {fileID: 269454616}
+  - component: {fileID: 269454615}
+  - component: {fileID: 269454614}
+  - component: {fileID: 269454613}
+  - component: {fileID: 269454612}
+  m_Layer: 6
+  m_Name: Silder Z-Axis
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &269454611
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269454610}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.9, y: 1.55, z: -7.08}
+  m_LocalScale: {x: 8, y: 4, z: 5}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 438262371}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &269454612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269454610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 965d63be27f1afa49b0a545b7d9c4ca8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_velocity: {x: 0, y: 0, z: 0}
+  m_rotateAxis: {x: 0, y: 0, z: 1}
+  m_rotateSpeed: -30
+--- !u!54 &269454613
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269454610}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &269454614
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269454610}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &269454615
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269454610}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &269454616
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269454610}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &271920834
 GameObject:
   m_ObjectHideFlags: 0
@@ -4929,16 +5317,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -5109,16 +5504,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -5142,11 +5544,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9065829857817571854, guid: f9f8f6b9fd802284798e8bfb003fb243, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 9065829857817571854, guid: f9f8f6b9fd802284798e8bfb003fb243, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.09
+      value: 18.29
       objectReference: {fileID: 0}
     - target: {fileID: 9065829857817571854, guid: f9f8f6b9fd802284798e8bfb003fb243, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5154,7 +5556,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9065829857817571854, guid: f9f8f6b9fd802284798e8bfb003fb243, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -23.28
+      value: 1.17
       objectReference: {fileID: 0}
     - target: {fileID: 9065829857817571854, guid: f9f8f6b9fd802284798e8bfb003fb243, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5243,22 +5645,41 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 1
   m_useGroundSnap: 1
-  m_stableAngle: 50
+  m_stableAngle: 75
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 1
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
   m_blockMask:
     serializedVersion: 2
     m_Bits: 64
+--- !u!114 &280727968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280727960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b025dbcda7729914486b740208a19f67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &285311509
 GameObject:
   m_ObjectHideFlags: 0
@@ -5423,16 +5844,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -5603,16 +6031,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -5783,16 +6218,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -5963,16 +6405,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -6143,16 +6592,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -6323,16 +6779,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -6503,16 +6966,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -6528,29 +6998,15 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 340646789}
-  - component: {fileID: 340646788}
-  - component: {fileID: 340646791}
   - component: {fileID: 340646790}
+  - component: {fileID: 340646791}
   m_Layer: 0
-  m_Name: Manager
+  m_Name: Input Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &340646788
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 340646787}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c5cdc70d4a746d4b91c88ad2f4579c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_settings: {fileID: 11400000, guid: c4659e08124036b428a14c8c4c055cd4, type: 2}
 --- !u!4 &340646789
 Transform:
   m_ObjectHideFlags: 0
@@ -6564,7 +7020,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &340646790
 MonoBehaviour:
@@ -6594,7 +7050,7 @@ MonoBehaviour:
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 340646791}
-        m_TargetAssemblyTypeName: UPhys.UInputManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: UPhys.InputManager, Assembly-CSharp
         m_MethodName: OnMove
         m_Mode: 0
         m_Arguments:
@@ -6610,7 +7066,7 @@ MonoBehaviour:
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 340646791}
-        m_TargetAssemblyTypeName: UPhys.UInputManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: UPhys.InputManager, Assembly-CSharp
         m_MethodName: OnJump
         m_Mode: 0
         m_Arguments:
@@ -6806,16 +7262,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -6986,16 +7449,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -7166,16 +7636,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -7424,16 +7901,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -7604,16 +8088,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -7784,16 +8275,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -7964,16 +8462,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -8144,16 +8649,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -8324,22 +8836,143 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
   m_blockMask:
     serializedVersion: 2
     m_Bits: 64
+--- !u!1 &409433929
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 409433934}
+  - component: {fileID: 409433933}
+  - component: {fileID: 409433932}
+  - component: {fileID: 409433931}
+  - component: {fileID: 409433930}
+  m_Layer: 0
+  m_Name: Dynamic Rigidbody Probs
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!54 &409433930
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409433929}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &409433931
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409433929}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &409433932
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409433929}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &409433933
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409433929}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &409433934
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409433929}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.75, y: 1.16, z: -18.56}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 438262371}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &412194231
 GameObject:
   m_ObjectHideFlags: 0
@@ -8504,16 +9137,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -8684,16 +9324,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -8834,11 +9481,18 @@ Transform:
   - {fileID: 625856822}
   - {fileID: 490852470}
   - {fileID: 1174606734}
+  - {fileID: 1652858113}
+  - {fileID: 269454611}
   - {fileID: 2070825780}
+  - {fileID: 1882850098}
   - {fileID: 1592376184}
   - {fileID: 1964004484}
+  - {fileID: 409433934}
+  - {fileID: 1208846695}
+  - {fileID: 632757587}
+  - {fileID: 1075026394}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &447771305
 GameObject:
@@ -9004,16 +9658,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -9184,22 +9845,126 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
   m_blockMask:
     serializedVersion: 2
     m_Bits: 64
+--- !u!1 &452256521
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 452256522}
+  - component: {fileID: 452256525}
+  - component: {fileID: 452256524}
+  - component: {fileID: 452256523}
+  m_Layer: 6
+  m_Name: Cube (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &452256522
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452256521}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.5, y: 0, z: 0}
+  m_LocalScale: {x: 5, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1882850098}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &452256523
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452256521}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &452256524
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452256521}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &452256525
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452256521}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &452896171
 GameObject:
   m_ObjectHideFlags: 0
@@ -9364,16 +10129,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -9544,16 +10316,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -9821,16 +10600,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -9873,7 +10659,6 @@ MonoBehaviour:
   m_velocity: {x: 5, y: 0, z: 0}
   m_rotateAxis: {x: 0, y: 0, z: 0}
   m_rotateSpeed: 0
-  m_conveyorMode: 1
 --- !u!54 &490852466
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10264,16 +11049,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -10444,16 +11236,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -10624,16 +11423,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -10804,16 +11610,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -10984,16 +11797,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -11164,16 +11984,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -11344,16 +12171,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -11524,16 +12358,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -11704,16 +12545,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -11884,16 +12732,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -12064,16 +12919,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -12211,6 +13073,120 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &632757586
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 632757587}
+  - component: {fileID: 632757591}
+  - component: {fileID: 632757590}
+  - component: {fileID: 632757589}
+  - component: {fileID: 632757588}
+  m_Layer: 0
+  m_Name: Dynamic Rigidbody Probs (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &632757587
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632757586}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.84, y: 1.16, z: -20.31}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 438262371}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &632757588
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632757586}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &632757589
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632757586}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &632757590
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632757586}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &632757591
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632757586}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &635590579
 GameObject:
   m_ObjectHideFlags: 0
@@ -12375,16 +13351,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -12652,16 +13635,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -12832,16 +13822,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -13012,16 +14009,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -13289,16 +14293,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -13469,16 +14480,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -13649,16 +14667,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -13926,16 +14951,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -14106,16 +15138,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -14383,16 +15422,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -14738,16 +15784,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -14918,16 +15971,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -15098,16 +16158,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -15278,16 +16345,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -15458,16 +16532,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -15735,16 +16816,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -15915,16 +17003,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -16095,16 +17190,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -16275,16 +17377,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -16455,16 +17564,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -16635,16 +17751,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -16815,16 +17938,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -16995,16 +18125,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -17175,16 +18312,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -17355,16 +18499,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -17535,16 +18686,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -17812,16 +18970,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -17992,22 +19157,126 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
   m_blockMask:
     serializedVersion: 2
     m_Bits: 64
+--- !u!1 &941019276
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 941019277}
+  - component: {fileID: 941019280}
+  - component: {fileID: 941019279}
+  - component: {fileID: 941019278}
+  m_Layer: 6
+  m_Name: Cube (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &941019277
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941019276}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2.5}
+  m_LocalScale: {x: 1, y: 1, z: 5}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1882850098}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &941019278
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941019276}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &941019279
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941019276}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &941019280
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941019276}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &946732536
 GameObject:
   m_ObjectHideFlags: 0
@@ -18172,16 +19441,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -18352,16 +19628,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -18445,14 +19728,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 962124480}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
   m_LocalPosition: {x: -2.85, y: 3.97, z: -26.28}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
 --- !u!114 &962124484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18467,7 +19750,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_target: {fileID: 280727961}
   m_springArmDist: 15
-  m_springArmDeg: 0
+  m_springArmDeg: 30
 --- !u!1 &977215564
 GameObject:
   m_ObjectHideFlags: 0
@@ -18632,16 +19915,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -18812,16 +20102,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -18992,16 +20289,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -19172,16 +20476,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -19352,16 +20663,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -19726,16 +21044,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -19906,16 +21231,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -20086,16 +21418,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -20266,16 +21605,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -20446,16 +21792,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -20626,16 +21979,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -20903,16 +22263,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -21083,16 +22450,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -21263,22 +22637,143 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
   m_blockMask:
     serializedVersion: 2
     m_Bits: 64
+--- !u!1 &1075026393
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1075026394}
+  - component: {fileID: 1075026398}
+  - component: {fileID: 1075026397}
+  - component: {fileID: 1075026396}
+  - component: {fileID: 1075026395}
+  m_Layer: 0
+  m_Name: Dynamic Rigidbody Probs (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1075026394
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1075026393}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 8.62, y: 1.16, z: -20.14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 438262371}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1075026395
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1075026393}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1075026396
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1075026393}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1075026397
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1075026393}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1075026398
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1075026393}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1076830502
 GameObject:
   m_ObjectHideFlags: 0
@@ -21443,16 +22938,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -21623,16 +23125,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -21803,16 +23312,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -21983,16 +23499,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -22163,16 +23686,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -22343,16 +23873,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -22523,16 +24060,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -22800,16 +24344,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -22980,16 +24531,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -23160,16 +24718,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -23340,16 +24905,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -23520,16 +25092,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -23700,16 +25279,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -23767,7 +25353,6 @@ MonoBehaviour:
   m_velocity: {x: 1, y: 0, z: 0}
   m_rotateAxis: {x: 0, y: 1, z: 0}
   m_rotateSpeed: 30
-  m_conveyorMode: 0
 --- !u!54 &1174606736
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -24011,22 +25596,143 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
   m_blockMask:
     serializedVersion: 2
     m_Bits: 64
+--- !u!1 &1208846694
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1208846695}
+  - component: {fileID: 1208846699}
+  - component: {fileID: 1208846698}
+  - component: {fileID: 1208846697}
+  - component: {fileID: 1208846696}
+  m_Layer: 0
+  m_Name: Dynamic Rigidbody Probs (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1208846695
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208846694}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 8.22, y: 1.16, z: -18.84}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 438262371}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1208846696
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208846694}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1208846697
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208846694}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1208846698
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208846694}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1208846699
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208846694}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1210373503
 GameObject:
   m_ObjectHideFlags: 0
@@ -24058,7 +25764,7 @@ Transform:
   - {fileID: 506624251}
   - {fileID: 1596833290}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1217771632
 GameObject:
@@ -24224,16 +25930,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -24404,16 +26117,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -24584,16 +26304,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -24764,16 +26491,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -24944,16 +26678,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -25124,16 +26865,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -25401,16 +27149,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -25581,16 +27336,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -25761,16 +27523,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -25941,16 +27710,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -26199,16 +27975,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -26379,16 +28162,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -26559,16 +28349,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -26739,16 +28536,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -26919,16 +28723,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -27099,16 +28910,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -27279,16 +29097,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -27459,16 +29284,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -27639,16 +29471,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -27819,16 +29658,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -27999,16 +29845,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -28179,16 +30032,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -28359,16 +30219,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -28539,22 +30406,126 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
   m_blockMask:
     serializedVersion: 2
     m_Bits: 64
+--- !u!1 &1437824585
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1437824586}
+  - component: {fileID: 1437824589}
+  - component: {fileID: 1437824588}
+  - component: {fileID: 1437824587}
+  m_Layer: 6
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1437824586
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1437824585}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.5, y: 0, z: 0}
+  m_LocalScale: {x: 5, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1882850098}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1437824587
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1437824585}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1437824588
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1437824585}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1437824589
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1437824585}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1453706138
 GameObject:
   m_ObjectHideFlags: 0
@@ -28719,16 +30690,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -28899,16 +30877,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -29176,16 +31161,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -29356,16 +31348,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -29536,16 +31535,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -29716,16 +31722,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -30127,16 +32140,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -30307,16 +32327,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -30487,16 +32514,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -30667,16 +32701,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -30847,16 +32888,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -31027,16 +33075,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -31056,7 +33111,7 @@ GameObject:
   - component: {fileID: 1592376182}
   - component: {fileID: 1592376181}
   m_Layer: 6
-  m_Name: Slope ??
+  m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31138,7 +33193,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 438262371}
-  m_RootOrder: 10
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 80, y: 90, z: 0}
 --- !u!1 &1596833289
 GameObject:
@@ -31336,16 +33391,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -31613,16 +33675,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -31793,22 +33862,159 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
   m_blockMask:
     serializedVersion: 2
     m_Bits: 64
+--- !u!1 &1652858112
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1652858113}
+  - component: {fileID: 1652858118}
+  - component: {fileID: 1652858117}
+  - component: {fileID: 1652858116}
+  - component: {fileID: 1652858115}
+  - component: {fileID: 1652858114}
+  m_Layer: 6
+  m_Name: Silder Slope
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1652858113
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652858112}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 25.15, y: 1.55, z: 1.11}
+  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 438262371}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1652858114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652858112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 965d63be27f1afa49b0a545b7d9c4ca8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_velocity: {x: -1, y: 0, z: 0}
+  m_rotateAxis: {x: 0, y: 1, z: 0}
+  m_rotateSpeed: 0
+--- !u!54 &1652858115
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652858112}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1652858116
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652858112}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1652858117
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652858112}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1652858118
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652858112}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1659706020
 GameObject:
   m_ObjectHideFlags: 0
@@ -31973,16 +34179,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -32153,16 +34366,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -32372,16 +34592,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -32552,16 +34779,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -32732,16 +34966,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -32912,16 +35153,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -33128,16 +35376,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -33308,16 +35563,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -33488,16 +35750,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -33668,16 +35937,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -33848,16 +36124,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -34028,16 +36311,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -34305,16 +36595,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -34485,16 +36782,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -34665,16 +36969,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -34845,16 +37156,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -35025,16 +37343,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -35205,16 +37530,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -35385,16 +37717,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -35565,16 +37904,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -35842,16 +38188,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -36119,16 +38472,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -36299,16 +38659,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -36479,16 +38846,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -36592,6 +38966,74 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1871651775}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1882850097
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1882850098}
+  - component: {fileID: 1882850100}
+  - component: {fileID: 1882850099}
+  m_Layer: 6
+  m_Name: Propeller Vertical
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1882850098
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882850097}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 17.88, y: 6.7, z: -16.11}
+  m_LocalScale: {x: 1, y: 10, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1437824586}
+  - {fileID: 452256522}
+  - {fileID: 941019277}
+  - {fileID: 74726174}
+  m_Father: {fileID: 438262371}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1882850099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882850097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 965d63be27f1afa49b0a545b7d9c4ca8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_velocity: {x: 0, y: 0, z: 0}
+  m_rotateAxis: {x: 0, y: 1, z: 0}
+  m_rotateSpeed: 30
+--- !u!54 &1882850100
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882850097}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1888952410
 GameObject:
   m_ObjectHideFlags: 0
@@ -36756,16 +39198,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -36936,16 +39385,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -37116,16 +39572,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -37296,16 +39759,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -37476,16 +39946,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -37753,16 +40230,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -37866,6 +40350,50 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1928324955}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1941406658
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1941406660}
+  - component: {fileID: 1941406659}
+  m_Layer: 0
+  m_Name: UPhysSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1941406659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1941406658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c5cdc70d4a746d4b91c88ad2f4579c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1941406660
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1941406658}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -14.776787, y: -5.492141, z: -10.379047}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1953140948
 GameObject:
   m_ObjectHideFlags: 0
@@ -38030,16 +40558,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -38210,16 +40745,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -38390,16 +40932,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -38419,7 +40968,7 @@ GameObject:
   - component: {fileID: 1964004486}
   - component: {fileID: 1964004485}
   m_Layer: 6
-  m_Name: Slope ?? (1)
+  m_Name: Wall 60
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38438,7 +40987,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 438262371}
-  m_RootOrder: 11
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 80, y: 90, z: -60}
 --- !u!65 &1964004485
 BoxCollider:
@@ -38667,16 +41216,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -38847,16 +41403,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -39027,16 +41590,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -39304,16 +41874,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -39484,16 +42061,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -39664,16 +42248,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -39941,16 +42532,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -39969,12 +42567,12 @@ GameObject:
   - component: {fileID: 2070825779}
   - component: {fileID: 2070825778}
   m_Layer: 6
-  m_Name: Propeller
+  m_Name: Propeller Horizontal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2070825778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39990,7 +42588,6 @@ MonoBehaviour:
   m_velocity: {x: 0, y: 0, z: 0}
   m_rotateAxis: {x: 0, y: 1, z: 0}
   m_rotateSpeed: 30
-  m_conveyorMode: 0
 --- !u!54 &2070825779
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -40015,7 +42612,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2070825777}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.12, y: 0.63, z: -3.04}
+  m_LocalPosition: {x: -6.97, y: 0.63, z: -11.45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -40024,7 +42621,7 @@ Transform:
   - {fileID: 438186418}
   - {fileID: 1116857115}
   m_Father: {fileID: 438262371}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2073979215
 GameObject:
@@ -40384,16 +42981,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -40564,16 +43168,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -40744,16 +43355,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -41021,16 +43639,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_velocity: {x: 0, y: 0, z: 0}
   m_mass: 100
+  m_useHandleGround: 0
   m_useGroundSnap: 1
   m_stableAngle: 50
   m_stepOffset: 0.2
-  m_useGravity: 1
-  m_gravity: 10
-  m_fallGravityWeights: 1.2
+  m_groundReport:
+    m_hitAnyGround: 0
+    m_isStable: 0
+    m_collider: {fileID: 0}
+    m_point: {x: 0, y: 0, z: 0}
+    m_normal: {x: 0, y: 0, z: 0}
+    m_angle: 0
+    m_distance: 0
+    m_elapsedUngroundTime: 0
   m_useRiding: 0
-  m_isRideDynamic: 0
   m_riding: {fileID: 0}
   m_ridingContactPoint: {x: 0, y: 0, z: 0}
+  m_handleStuck: 1
   m_collidableMask:
     serializedVersion: 2
     m_Bits: 2147483647

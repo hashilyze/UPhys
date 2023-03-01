@@ -36,11 +36,6 @@ namespace UPhys
         {
             UpdateVelocity(deltaTime);
 
-            if (m_conveyorMode)
-            {
-                return;
-            }
-
             // Cache physics values before simulate
             m_nextPos = m_initPos = m_rigidbody.position;
             m_nextRot = m_initRot = m_rigidbody.rotation;
@@ -50,15 +45,13 @@ namespace UPhys
 
             m_rigidbody.position = m_nextPos;
             m_rigidbody.rotation = m_nextRot;
+            
+            transform.position = m_nextPos;
+            transform.rotation = m_nextRot;
         }
 
         public void SimulateCommit ()
         {
-            if (m_conveyorMode)
-            {
-                return;
-            }
-
             m_rigidbody.position = m_initPos;
             m_rigidbody.rotation = m_initRot;
 
@@ -70,8 +63,6 @@ namespace UPhys
         [SerializeField] private Vector3 m_velocity;
         [SerializeField] private Vector3 m_rotateAxis;
         [SerializeField] private float m_rotateSpeed;
-
-        [SerializeField] private bool m_conveyorMode = false;
 
         private Rigidbody m_rigidbody;
 

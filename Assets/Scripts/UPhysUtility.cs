@@ -11,7 +11,6 @@ namespace UPhys
             Transform colTransform = collider.transform;
             pos = colTransform.position;
             rot = colTransform.rotation;
-            return;
 
             // Get changed transform if UPhys Object
             //Rigidbody overlapRigidbody = collider.attachedRigidbody;

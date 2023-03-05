@@ -13,10 +13,7 @@ namespace UPhys
     public class UCharacterController : MonoBehaviour
     {
         #region Public
-        public void OnCharacterHit ()
-        {
-
-        }
+        public void OnCharacterHit () { }
         // Called when character is grounded but previous tick is not
         public void OnLand ()
         {
@@ -33,7 +30,7 @@ namespace UPhys
 
         public void SetPlayerInput (InputSet playerInput)
         {
-            m_inputDirection = new Vector3(playerInput.moveAxis.x, 0.0f, playerInput.moveAxis.y);
+            _inputDirection = new Vector3(playerInput.moveAxis.x, 0.0f, playerInput.moveAxis.y);
                 
         }
 
@@ -41,27 +38,24 @@ namespace UPhys
 
         public void DoJump ()
         {
-            m_requestedJump = true;
-            m_elapsedRequestedJump = 0.0f;
-            m_requestedJumpSpeed = Mathf.Sqrt(2.0f * m_gravity * m_maxJumpDistance);
+            _requestedJump = true;
+            _elapsedRequestedJump = 0.0f;
+            _requestedJumpSpeed = Mathf.Sqrt(2.0f * _gravity * _maxJumpDistance);
         }
-
         public void StopJump ()
         {
-            m_requestedStopJump = true;
+            _requestedStopJump = true;
         }
 
-        /// <summary>
-        /// Refill more jump count; default is full
-        /// </summary>
+        /// <summary>Refill more jump count; default is full</summary>
         public void RefillMoreJump (int count = int.MaxValue)
         {
-            m_leftMoreJumpCount = Mathf.Clamp(count, 0, m_moreJumpCount);
+            _leftMoreJumpCount = Mathf.Clamp(count, 0, _moreJumpCount);
         }
 
         public void UpdateVelocity (float deltaTime, ref Vector3 velocity, UCharacterMovement movement)
         {
-            switch (m_state)
+            switch (_state)
             {
             case EState.Default:
                 UpdateVelocityDefault(deltaTime, ref velocity, movement);
@@ -76,7 +70,7 @@ namespace UPhys
 
         public void UpdateRotation (float deltaTime, ref Quaternion rotation, UCharacterMovement movement)
         {
-            switch (m_state)
+            switch (_state)
             {
             case EState.Default:
                 // Character could look toward movement direction
@@ -87,7 +81,7 @@ namespace UPhys
                     if (horizontalDirection != Vector3.zero)
                     {
                         Quaternion targetRotation = Quaternion.LookRotation(horizontalDirection, movement.CharacterUp);
-                        rotation = Quaternion.RotateTowards(rotation, targetRotation, m_orientSpeed * deltaTime);
+                        rotation = Quaternion.RotateTowards(rotation, targetRotation, _orientSpeed * deltaTime);
                     }
                 }
                 break;
@@ -101,71 +95,72 @@ namespace UPhys
         #endregion
 
         [Header("Base")]
-        [SerializeField] private EState m_state = EState.Default;
+        [SerializeField] private EState _state = EState.Default;
 
         [Header("Stble Ground Movement")]
         [Tooltip("Maximum speed as move on ground")]
-        [SerializeField] private float m_maxSpeed = 5.0f;
+        [SerializeField] private float _maxSpeed = 5.0f;
         [Tooltip("Reach max speed fastly if higher")]
-        [SerializeField] private float m_acceleration = float.PositiveInfinity;
+        [SerializeField] private float _acceleration = float.PositiveInfinity;
         [Tooltip("Break velocity to zero fastly if higher")]
-        [SerializeField] private float m_friction = float.PositiveInfinity;
+        [SerializeField] private float _friction = float.PositiveInfinity;
         [Tooltip("Min distance to move character")]
-        [SerializeField] private float m_minDistance = 0.01f;
+        [SerializeField] private float _minDistance = 0.01f;
         [Tooltip("Rotate speed by degree toward move direction")]
-        [SerializeField] private float m_orientSpeed = 30.0f;
+        [SerializeField] private float _orientSpeed = 30.0f;
 
         [Header("Air Movement")]
         [Tooltip("Maximum speed as move on air")]
-        [SerializeField] private float m_maxAirSpeed = 5.0f;
+        [SerializeField] private float _maxAirSpeed = 5.0f;
         [Tooltip("Fast to reach MaxSpeed")]
-        [SerializeField] private float m_airAcceleration = 10.0f;
+        [SerializeField] private float _airAcceleration = 10.0f;
         [Tooltip("Fast to reach stop(zero velocity)")]
-        [SerializeField] private float m_drag = float.PositiveInfinity;
+        [SerializeField] private float _drag = float.PositiveInfinity;
         [Tooltip("Limit applied garvity")]
-        [SerializeField] private float m_maxFallSpeed = 10.0f;
+        [SerializeField] private float _maxFallSpeed = 10.0f;
 
         [Header("Jump")]
         [Tooltip("Maximum distance as jump without obstacle")]
-        [SerializeField] private float m_maxJumpDistance = 5.0f;
+        [SerializeField] private float _maxJumpDistance = 5.0f;
         //[Tooltip("Minimum distance as jump without obstacle")]
-        //[SerializeField] private float m_minJumpDistance = 1.0f;
+        //[SerializeField] private float _minJumpDistance = 1.0f;
         [Tooltip("Speed when jump cancealed")]
-        [SerializeField] private float m_variableJumpSpeed = 0.0f;
+        [SerializeField] private float _variableJumpSpeed = 0.0f;
         [Tooltip("Delay cancel jump until time over")]
-        [SerializeField] private float m_minJumpTime = 0.02f;
+        [SerializeField] private float _minJumpTime = 0.02f;
 
         [Tooltip("How many do jumping on air")]
-        [SerializeField] private int m_moreJumpCount = 1;
-        [ReadOnly] [SerializeField] private int m_leftMoreJumpCount;
+        [SerializeField] private int _moreJumpCount = 1;
+        [ReadOnly] [SerializeField] private int _leftMoreJumpCount;
 
         [Tooltip("Jump a few time later after ungrounded")]
-        [SerializeField] private float m_coyoteTime = 0.05f;
+        [SerializeField] private float _coyoteTime = 0.05f;
         [Tooltip("Kepp jump request if failed")]
-        [SerializeField] private float m_jumpBuffer = 0.05f;
+        [SerializeField] private float _jumpBuffer = 0.05f;
 
         [Tooltip("Extend hang up time if curved jump")]
-        [SerializeField] private float m_halfGravityThresdhold = 0.5f;
-        private bool m_doJump = false;
-        private float m_elapsedJumpTime = 0.0f;
+        [SerializeField] private float _halfGravityThresdhold = 0.5f;
+        private bool _doJump = false;
+        private float _elapsedJumpTime = 0.0f;
 
         [Header("Gravity")]
         [Tooltip("Apply gravity as character is on airbone")]
-        [SerializeField] private bool m_useGravity = true;
+        [SerializeField] private bool _useGravity = true;
         [Tooltip("Sacle of gravity without any weights; Higher falls faster")]
-        [SerializeField] private float m_gravity = 10.0f;
+        [SerializeField] private float _gravity = 10.0f;
         [Tooltip("Smooth feel of fall")]
-        [SerializeField] private float m_fallGravityWeights = 1.2f;
+        [SerializeField] private float _fallGravityWeights = 1.2f;
 
         // Requested values
         // Move
-        private Vector3 m_inputDirection;
+        private Vector3 _inputDirection;
         // Jump
-        private float m_requestedJumpSpeed = 0.0f;
-        private bool m_requestedJump = false;
-        private float m_elapsedRequestedJump = 0.0f;
-        private bool m_requestedStopJump = false;
+        private float _requestedJumpSpeed = 0.0f;
+        private bool _requestedJump = false;
+        private float _elapsedRequestedJump = 0.0f;
+        private bool _requestedStopJump = false;
 
+        // Life cycle management
         private void OnEnable ()
         {
             InputManager.RegisterPlayer(this);
@@ -185,20 +180,20 @@ namespace UPhys
                 Vector3 reorientVelocity = velocity.magnitude * tangent;
 
                 // Accelerate movement
-                if (m_inputDirection != Vector3.zero)
+                if (_inputDirection != Vector3.zero)
                 {
                     // Reorient input direction to surface
-                    Vector3 newDirection = Vector3.Cross(movement.GroundReport.Normal, Vector3.Cross(m_inputDirection, movement.CharacterUp)).normalized;
-                    velocity = Vector3.Lerp(reorientVelocity, m_maxSpeed * newDirection, 1.0f - Mathf.Exp(-m_acceleration * deltaTime));
+                    Vector3 newDirection = Vector3.Cross(movement.GroundReport.Normal, Vector3.Cross(_inputDirection, movement.CharacterUp)).normalized;
+                    velocity = Vector3.Lerp(reorientVelocity, _maxSpeed * newDirection, 1.0f - Mathf.Exp(-_acceleration * deltaTime));
                 }
                 // Break movement
                 else
                 {
                     if (velocity != Vector3.zero)
                     {
-                        velocity = Vector3.Lerp(reorientVelocity, Vector3.zero, 1.0f - Mathf.Exp(-m_friction * deltaTime));
+                        velocity = Vector3.Lerp(reorientVelocity, Vector3.zero, 1.0f - Mathf.Exp(-_friction * deltaTime));
                         // Break completely with discard velocity when lower than min distance
-                        if (velocity.sqrMagnitude * deltaTime * deltaTime < m_minDistance * m_minDistance)
+                        if (velocity.sqrMagnitude * deltaTime * deltaTime < _minDistance * _minDistance)
                         {
                             velocity = Vector3.zero;
                         }
@@ -211,16 +206,16 @@ namespace UPhys
                 Vector3 horizontalVelocity = Vector3.ProjectOnPlane(velocity, movement.CharacterUp);
                 // Horizontal velocity
                 {
-                    if (m_inputDirection != Vector3.zero)
+                    if (_inputDirection != Vector3.zero)
                     {
-                        horizontalVelocity = Vector3.Lerp(horizontalVelocity, m_maxAirSpeed * m_inputDirection, 1.0f - Mathf.Exp(-m_airAcceleration * deltaTime));
+                        horizontalVelocity = Vector3.Lerp(horizontalVelocity, _maxAirSpeed * _inputDirection, 1.0f - Mathf.Exp(-_airAcceleration * deltaTime));
                     }
                     else
                     {
                         if (horizontalVelocity != Vector3.zero)
                         {
-                            horizontalVelocity = Vector3.Lerp(horizontalVelocity, Vector3.zero, 1.0f - Mathf.Exp(-m_drag * deltaTime));
-                            if (horizontalVelocity.sqrMagnitude * deltaTime * deltaTime < m_minDistance * m_minDistance)
+                            horizontalVelocity = Vector3.Lerp(horizontalVelocity, Vector3.zero, 1.0f - Mathf.Exp(-_drag * deltaTime));
+                            if (horizontalVelocity.sqrMagnitude * deltaTime * deltaTime < _minDistance * _minDistance)
                             {
                                 horizontalVelocity = Vector3.zero;
                             }
@@ -233,19 +228,19 @@ namespace UPhys
                 {
                     float verticalSpeed = Vector3.Dot(velocity, movement.CharacterUp);
 
-                    if (m_useGravity)
+                    if (_useGravity)
                     {
-                        verticalSpeed += deltaTime * -m_gravity
-                            * (verticalSpeed < 0.0f ? m_fallGravityWeights : 1.0f)
-                            * (Mathf.Abs(verticalSpeed) <= m_halfGravityThresdhold ? 0.5f : 1.0f);
+                        verticalSpeed += deltaTime * -_gravity
+                            * (verticalSpeed < 0.0f ? _fallGravityWeights : 1.0f)
+                            * (Mathf.Abs(verticalSpeed) <= _halfGravityThresdhold ? 0.5f : 1.0f);
                     }
 
-                    verticalSpeed = Mathf.Max(verticalSpeed, -m_maxFallSpeed);
+                    verticalSpeed = Mathf.Max(verticalSpeed, -_maxFallSpeed);
                     verticalVelocity = verticalSpeed * movement.CharacterUp;
 
                     if (verticalSpeed < 0.0f)
                     {
-                        m_doJump = false;
+                        _doJump = false;
 
                         OnFall?.Invoke(this);
                     }
@@ -259,40 +254,40 @@ namespace UPhys
 
         private void HandleJump (float deltaTime, ref Vector3 velocity, UCharacterMovement movement)
         {
-            if (m_doJump)
+            if (_doJump)
             {
-                m_elapsedJumpTime += deltaTime;
+                _elapsedJumpTime += deltaTime;
             }
 
             // Try jump up
-            if (m_requestedJump)
+            if (_requestedJump)
             {
                 // Check character can jump
                 bool canJump = false;
-                if (movement.GroundReport.HitAnyGround && movement.GroundReport.IsStable || movement.GroundReport.ElapsedUngroundTime <= m_coyoteTime)
+                if (movement.GroundReport.HitAnyGround && movement.GroundReport.IsStable || movement.GroundReport.ElapsedUngroundTime <= _coyoteTime)
                 {
                     // Jump when on stable ground or a few frame later ungrounded
                     canJump = true;
                 }
-                else if (m_leftMoreJumpCount > 0)
+                else if (_leftMoreJumpCount > 0)
                 {
                     // Comsume more jump for jumping
                     canJump = true;
-                    --m_leftMoreJumpCount;
+                    --_leftMoreJumpCount;
                 }
 
                 if (canJump)
                 {
                     // Consume Jump
-                    m_requestedJump = false;
-                    m_elapsedRequestedJump = 0.0f;
+                    _requestedJump = false;
+                    _elapsedRequestedJump = 0.0f;
 
-                    m_doJump = true;
-                    m_elapsedJumpTime = 0.0f;
+                    _doJump = true;
+                    _elapsedJumpTime = 0.0f;
 
                     // Discard old vertical velocity and set jump velocity
-                    //velocity = Vector3.ProjectOnPlane(velocity, movement.CharacterUp) + movement.CharacterUp * Mathf.Sqrt(2.0f * m_gravity * m_maxJumpDistance);
-                    velocity = Vector3.ProjectOnPlane(velocity, movement.CharacterUp) + movement.CharacterUp * m_requestedJumpSpeed;
+                    //velocity = Vector3.ProjectOnPlane(velocity, movement.CharacterUp) + movement.CharacterUp * Mathf.Sqrt(2.0f * _gravity * _maxJumpDistance);
+                    velocity = Vector3.ProjectOnPlane(velocity, movement.CharacterUp) + movement.CharacterUp * _requestedJumpSpeed;
 
                     // Conserve momentum when jump on movor
                     if (movement.GroundReport.HitAnyGround && movement.GroundReport.IsStable)
@@ -313,32 +308,32 @@ namespace UPhys
 
                 // Update Jump Buffer
                 {
-                    m_elapsedRequestedJump += deltaTime;
-                    if (m_elapsedRequestedJump > m_jumpBuffer)
+                    _elapsedRequestedJump += deltaTime;
+                    if (_elapsedRequestedJump > _jumpBuffer)
                     {
-                        m_requestedJump = false;
-                        m_elapsedRequestedJump = 0.0f;
+                        _requestedJump = false;
+                        _elapsedRequestedJump = 0.0f;
                     }
                 }
             }
 
             // Break Jump; Force falling
-            if (m_requestedStopJump && m_elapsedJumpTime >= m_minJumpTime)
+            if (_requestedStopJump && _elapsedJumpTime >= _minJumpTime)
             {
-                m_requestedStopJump = false;
+                _requestedStopJump = false;
 
-                if (m_doJump)
+                if (_doJump)
                 {
-                    m_doJump = false;
+                    _doJump = false;
 
                     // Force falling by increasing gravity
-                    //float init = Mathf.Sqrt(2.0f * m_gravity * m_maxJumpDistance);
-                    //float currentJumpHeight = init * m_elapsedJumpTime + 0.5f * -m_gravity * m_elapsedJumpTime * m_elapsedJumpTime;
-                    //float forceFallingWeights = Mathf.Lerp(m_maxJumpDistance / m_minJumpDistance, 1.0f, currentJumpHeight / m_maxJumpDistance);
-                    //m_gravityWeights = forceFallingWeights;
+                    //float init = Mathf.Sqrt(2.0f * _gravity * _maxJumpDistance);
+                    //float currentJumpHeight = init * _elapsedJumpTime + 0.5f * -_gravity * _elapsedJumpTime * _elapsedJumpTime;
+                    //float forceFallingWeights = Mathf.Lerp(_maxJumpDistance / _minJumpDistance, 1.0f, currentJumpHeight / _maxJumpDistance);
+                    //_gravityWeights = forceFallingWeights;
 
                     // Force falling by setting vertical velocity
-                    velocity = Vector3.ProjectOnPlane(velocity, movement.CharacterUp) + Mathf.Min(Vector3.Dot(velocity, movement.CharacterUp), m_variableJumpSpeed) * movement.CharacterUp;
+                    velocity = Vector3.ProjectOnPlane(velocity, movement.CharacterUp) + Mathf.Min(Vector3.Dot(velocity, movement.CharacterUp), _variableJumpSpeed) * movement.CharacterUp;
                 }
             }
         }

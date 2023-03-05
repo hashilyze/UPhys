@@ -6,76 +6,60 @@ namespace UPhys
 {
     public class UPlatformController : MonoBehaviour
     {
-        public Vector3 Velocity
-        {
-            get => m_velocity;
-            set => m_velocity = value;
-        }
-        public Quaternion AngularVelocity
-        {
-            get => Quaternion.AngleAxis(m_rotateSpeed, m_rotateAxis);
-        }
-        public float RotateSpeed
-        {
-            get => m_rotateSpeed;
-            set => m_rotateSpeed = value;
-        }
-        public Vector3 RotateAxis
-        {
-            get => m_rotateAxis;
-            set => m_rotateAxis = value;
-        }
+        public Vector3 Velocity { get => _velocity; set => _velocity = value; }
+        public Quaternion AngularVelocity { get => Quaternion.AngleAxis(_rotateSpeed * Mathf.Deg2Rad, transform.rotation * _rotateAxis); }
+        public float RotateSpeed { get => _rotateSpeed; set => _rotateSpeed = value; }  
+        public Vector3 RotateAxis { get => _rotateAxis; set => _rotateAxis = value; }
 
-        public virtual void UpdateVelocity (float deltaTime)
-        {
-            //m_rigidbody.velocity = m_velocity;
-            //m_rigidbody.angularVelocity = Quaternion.AngleAxis(m_rotateSpeed, m_rotateAxis).eulerAngles * Mathf.Deg2Rad;
-        }
+        public virtual void UpdateVelocity (float deltaTime) { }
 
         public void Simulate (float deltaTime)
         {
             UpdateVelocity(deltaTime);
 
             // Cache physics values before simulate
-            m_nextPos = m_initPos = m_rigidbody.position;
-            m_nextRot = m_initRot = m_rigidbody.rotation;
-
-            m_nextPos += m_velocity * deltaTime;
-            m_nextRot *= Quaternion.AngleAxis(m_rotateSpeed * deltaTime, m_rotateAxis);
-
-            m_rigidbody.position = m_nextPos;
-            m_rigidbody.rotation = m_nextRot;
+            _nextPos = _initPos = _rigidbody.position;
+            _nextRot = _initRot = _rigidbody.rotation;
             
-            transform.position = m_nextPos;
-            transform.rotation = m_nextRot;
+            _nextPos += _velocity * deltaTime;
+            _nextRot *= Quaternion.AngleAxis(_rotateSpeed * deltaTime, _rotateAxis);
+            
+            _rigidbody.position = _nextPos;
+            _rigidbody.rotation = _nextRot;
+
+            transform.position = _nextPos;
+            transform.rotation = _nextRot;
         }
 
         public void SimulateCommit ()
         {
-            m_rigidbody.position = m_initPos;
-            m_rigidbody.rotation = m_initRot;
+            _rigidbody.position = _initPos;
+            _rigidbody.rotation = _initRot;
 
-            m_rigidbody.MovePosition(m_nextPos);
-            m_rigidbody.MoveRotation(m_nextRot);
+            _rigidbody.MovePosition(_nextPos);
+            _rigidbody.MoveRotation(_nextRot);
         }
 
 
-        [SerializeField] private Vector3 m_velocity;
-        [SerializeField] private Vector3 m_rotateAxis;
-        [SerializeField] private float m_rotateSpeed;
+        [SerializeField] private Vector3 _velocity;
+        [SerializeField] private Vector3 _rotateAxis;
+        [SerializeField] private float _rotateSpeed;
 
-        private Rigidbody m_rigidbody;
+        private Rigidbody _rigidbody;
 
-        private Vector3 m_initPos;
-        private Quaternion m_initRot;
+        private Vector3 _initPos;
+        private Quaternion _initRot;
 
-        private Vector3 m_nextPos;
-        private Quaternion m_nextRot;
+        private Vector3 _nextPos;
+        private Quaternion _nextRot;
 
 
         private void Awake ()
         {
-            m_rigidbody = GetComponent<Rigidbody>();
+            if(!TryGetComponent(out _rigidbody))
+            {
+                throw new System.NullReferenceException($"{_rigidbody.GetType()} {gameObject.name} does not have rigidbody; Attach rigidbody.");
+            }
 
             UPhysSystem.RegisterPlatformController(this);
         }
